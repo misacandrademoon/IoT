@@ -3,6 +3,9 @@ import time
 # import random
 # import threading
 
+
+
+
 Resp=input('Ingrese color: ')
 opcPar=input('Parpadear SI o NO:')
 
