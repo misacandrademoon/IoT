@@ -3,17 +3,23 @@ import time
 # import random
 # import threading
 
+Resp=input('Ingrese color: ')
+opcPar=input('Parpadear SI o NO:')
 
-led_Gr=LED(17)
+opc={'Verde':LED(17),'ROJO':LED(18),'AZUL':LED(19)}
+ledOp=opc(Resp)
+
 # self.led_Blue = LED(led_io)
 # self.led_Red = LED(led_io)
 
 while True:
-    led_Gr.on()
-    time.sleep(1)
-    led_Gr.off()
-    time.sleep(1)
-
+    if opcPar == 'SI':
+        ledOp.on()
+        time.sleep(1)
+        ledOp.off()
+        time.sleep(1)
+    else:
+        ledOp.on()
 
 
 
